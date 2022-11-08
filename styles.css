@@ -1,61 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
     font-family: 'Poppins';
     background-color: #fff;
 }
+
 header > div#topnav {
     padding: 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid lightgray;
-  }
+}
   
-  nav {
+nav {
     width: 600px;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
     color: black;
-  }
-  
-  .blackHeart {
+}
+
+.blackHeart {
     width: 20px;
     margin-right: 1rem;
-  }
+}
 
-  header > div#npm-search-join-login {
+header > div#npm-search-join-login {
     padding: 10px 0 10px 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
-  }
+}
 
-  #npm-logo {
+#npm-logo {
     background: url('images/npm-logo.png') no-repeat scroll 10px 3px;
     background-size: 80px;
     width: 10%;
     z-index: 1;
-  }
+}
 
-  #npm-search {
+#npm-search {
     width: 75%;
-  }
+}
 
-  input[type=text] {
+input[type=text] {
     font-family: 'Poppins';
     border: none;
-  }
+}
 
-  .button {
+.button {
     color: #000;
     border: none;
 	padding: 8px 16px;
@@ -63,9 +65,9 @@ header > div#topnav {
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
-  }
+}
 
-  .search-field {
+.search-field {
     outline: none;
 	padding: 8px 16px;
     background: #ccc url('images/magnifying-glass.png') no-repeat scroll 7px 7px;
@@ -74,33 +76,42 @@ header > div#topnav {
     margin-left: 20px;
     color: #333;
     width: 80%;
-  }
+}
 
-  .search {
+.search {
     font-family: 'Poppins';
     font-size: 14px;
     background-color: #fb3e44;
     color: #fff;
-  }
+}
 
-  #join-login {
+#join-login {
     text-align: right;
     padding: 5px 0 0 0;
     justify-content: flex-end;
     width: 15%;
-  }
+}
 
-  .join {
+.join {
     border: 1px solid #000;
     margin-left: 10px;
-  }
+}
 
-  .login {
+a.join:hover {
+    background-color: #fb3b49;
+    color: #fff;
+}
+
+.login {
     margin-left: 10px;
     margin-right: 10px;
-  }
+}
 
-  #build_amazing {
+a.login:hover {
+    background-color: #efefef;
+}
+
+#build_amazing {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,44 +121,52 @@ header > div#topnav {
     background-color: #f8f4f4;
     border-top: 1px solid lightgray;
     height: 600px;
-  }
+}
 
-  #build_amazing h1 {
+#build_amazing h1 {
     font-size: 4.5em;
     line-height: 0em;
-  }
+}
 
-  #build_amazing p {
+#build_amazing p {
     font-size: 1.2em;
     width: 29%;
 	text-align: center;
     padding-bottom: 30px;
-  }
+}
 
-  .seePlans {
+.seePlans {
     font-weight: bold;
     background-color: #fb3b49;
     color: #fff;
     padding: 15px 45px;
     box-shadow: 5px 5px #fadbdc;
-  }
+}
 
-  .joinFree {
+a.seePlans:hover {
+    background-color: #e63643;
+}
+
+.joinFree {
     font-weight: bold;
     background-color: #fff;
     padding: 15px 45px;
     margin-left: 10px;
-  }
+}
 
-  #bring_best {
+a.joinFree:hover {
+    background-color: #efefef;
+}
+
+#bring_best {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
-  #hexagon {
+#hexagon {
     display: block;
     background: url('images/triangle-hexagon.svg') no-repeat scroll 0px 0px;
     background-size: contain;
@@ -155,45 +174,91 @@ header > div#topnav {
     width: 280px;
     height: 250px;
     margin: 50px 0;
-  }
+}
 
-  #bring_best h2 {
+#bring_best h2 {
     background-color: #ffebb5;
     transform: skew(9deg,0deg);
     font-size: 1.8em;
     font-style: italic;
     line-height: 1.3em;
     padding: 0 45px;
-  }
+}
 
-  #bring_best p {
+#bring_best p {
     margin: 20px 25%;
-  }
+}
 
-  #four_columns {
+#four_columns {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
-    margin-top: 50px;
-  }
+    margin: 50px 10% 50px 10%;
+}
+  
+#first_column, #second_column, #third_column, #fourth_column {
+    align-items: top;
+    text-align: left;
+    margin: 20px 30px;
+    width: 25%;
+}
 
+#first_column > h6, #second_column > h6, #third_column > h6, #fourth_column > h6 {
+    color: #ed1c24;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px;
+    line-height: 1em;
+    margin: 20px 0;
+}
 
+#first_column .img {
+    background: url('images/zero-configuration.svg') no-repeat scroll;
+    background-size: contain;
+    display: block;
+    height: 30px;
+}
 
+#second_column .img {
+    background: url('images/team-management.svg') no-repeat scroll;
+    background-size: contain;
+    display: block;
+    height: 30px;
+}
 
-  #createOrg {
+#third_column .img {
+    background: url('images/familiar-features.svg') no-repeat scroll;
+    background-size: contain;
+    display: block;
+    height: 30px;
+}
+
+#fourth_column .img {
+    background: url('images/npm-audit.svg') no-repeat scroll;
+    background-size: contain;
+    display: block;
+    height: 30px;
+}
+
+#createOrg {
     margin: 70px 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-  }
+}
 
-  .createOrg {
+.createOrg {
     text-align: center;
     font-weight: bold;
     background-color: #000;
-    padding: 15px 45px;
+    padding: 15px 10%;
     margin-left: 10px;
     color: #fff;
-    box-shadow: 5px 5px #ece7e1;
-  }
+    box-shadow: 8px 8px #ece7e1;
+}
+
+a.createOrg:hover {
+    background-color: #333;
+}
