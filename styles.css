@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+header > div#topnav {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  nav {
+    width: 600px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  header > div#npm-search-join-login {
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #npm-logo {
+    background: url('images/npm-logo.png') no-repeat scroll 10px 3px;
+    background-size: 80px;
+    width: 10%;
+    z-index: 1;
+  }
+
+  #npm-search {
+    width: 75%;
+  }
+
+  input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+  }
+
+  .button {
+    color: #000;
+    border: none;
+	padding: 8px 16px;
+	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+  }
+
+  .search-field {
+    outline: none;
+	padding: 8px 16px;
+    background: #ccc url('images/magnifying-glass.png') no-repeat scroll 7px 7px;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-left: 20px;
+    color: #333;
+    width: 80%;
+  }
+
+  .search {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #fb3e44;
+    color: #fff;
+  }
+
+  #join-login {
+    text-align: right;
+    padding: 5px 0 0 0;
+    justify-content: flex-end;
+    width: 15%;
+  }
+
+  .join {
+    border: 1px solid #000;
+    margin-left: 10px;
+  }
+
+  .login {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #build_amazing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #f8f4f4;
+    border-top: 1px solid lightgray;
+    height: 600px;
+  }
+
+  #build_amazing h1 {
+    font-size: 4.5em;
+    line-height: 0em;
+  }
+
+  #build_amazing p {
+    font-size: 1.2em;
+    width: 29%;
+	text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .seePlans {
+    font-weight: bold;
+    background-color: #fb3b49;
+    color: #fff;
+    padding: 15px 45px;
+    box-shadow: 5px 5px #fadbdc;
+  }
+
+  .joinFree {
+    font-weight: bold;
+    background-color: #fff;
+    padding: 15px 45px;
+    margin-left: 10px;
+  }
+
+  #bring_best {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #hexagon {
+    display: block;
+    background: url('images/triangle-hexagon.svg') no-repeat scroll 0px 0px;
+    background-size: contain;
+    z-index: 1;
+    width: 280px;
+    height: 250px;
+    margin: 50px 0;
+  }
+
+  #bring_best h2 {
+    font-size: 2.2em;
+    line-height: 0em;
+  }
+
